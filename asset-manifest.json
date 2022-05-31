@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b2b02eba.css",
-    "main.js": "/static/js/main.c1928cc3.js",
+    "main.js": "/static/js/main.e256bcd5.js",
     "static/js/787.3566300c.chunk.js": "/static/js/787.3566300c.chunk.js",
     "static/media/thefitnessjourney.png": "/static/media/thefitnessjourney.c2e9d6a1461c99b5448c.png",
     "static/media/bowlingmvp.png": "/static/media/bowlingmvp.ecfd070213e74a1b6b49.png",
@@ -25,11 +25,11 @@
     "static/media/redux.svg": "/static/media/redux.0e4fb1c819ac4c060c92343147d4ccf7.svg",
     "static/media/bootstrap.svg": "/static/media/bootstrap.d180fe4cd44732fd70b35f650a76b99c.svg",
     "main.b2b02eba.css.map": "/static/css/main.b2b02eba.css.map",
-    "main.c1928cc3.js.map": "/static/js/main.c1928cc3.js.map",
+    "main.e256bcd5.js.map": "/static/js/main.e256bcd5.js.map",
     "787.3566300c.chunk.js.map": "/static/js/787.3566300c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b2b02eba.css",
-    "static/js/main.c1928cc3.js"
+    "static/js/main.e256bcd5.js"
   ]
 }
