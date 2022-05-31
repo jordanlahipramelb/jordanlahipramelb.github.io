@@ -1,0 +1,105 @@
+.skills-page {
+	@media screen and (max-width: 400px) {
+		position: relative;
+		width: 90%;
+		left: 5%;
+	}
+
+	.title {
+		font-size: 3.4rem;
+		font-family: "Coolvetica";
+		font-weight: 400;
+		left: 5px;
+		position: relative;
+
+		span {
+			letter-spacing: 3px;
+		}
+
+		&::before {
+			content: "<h1>";
+			font-family: "La Belle Aurore";
+			color: #5eafbd;
+			font-size: 18px;
+			line-height: 18px;
+			position: absolute;
+			left: -1px;
+			opacity: 0.5;
+		}
+
+		&::after {
+			content: "</h1>";
+			font-family: "La Belle Aurore";
+			font-size: 18px;
+			position: absolute;
+			color: #5eafbd;
+			line-height: 18px;
+			bottom: -5px;
+			left: -1px;
+			opacity: 0.5;
+		}
+	}
+
+	.description {
+		animation: fadeIn 2s 2s backwards;
+	}
+
+	.images {
+		text-align: center;
+
+		img {
+			width: 5rem;
+			margin-top: 1rem;
+			margin-bottom: 1rem;
+			transition: 0.3s;
+			animation: fadeInUp 2s 2.5s backwards;
+
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+
+		p {
+			animation: fadeInUp 2s 2.5s backwards;
+			opacity: 0.8;
+		}
+
+		.sass {
+			margin-bottom: 40px;
+		}
+
+		.redux {
+			margin-bottom: 22px;
+		}
+
+		.flask {
+			margin-bottom: 42px;
+		}
+	}
+
+	@media screen and (max-width: 400px) {
+		.title {
+			font-size: 2.6rem;
+		}
+
+		.description {
+			font-size: 0.8rem;
+		}
+
+		img {
+			width: 3.5rem !important;
+		}
+
+		.sass {
+			margin-bottom: 32px !important;
+		}
+
+		.flask {
+			margin-bottom: 34px !important;
+		}
+
+		.redux {
+			margin-bottom: 20px !important;
+		}
+	}
+}
