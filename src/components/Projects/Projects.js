@@ -78,10 +78,14 @@ const Projects = () => {
 											system.
 										</p>
 										<div className="btn-group" role="group">
-											<button type="button" className="btn btn-outline-info">
-												GitHub
-											</button>
-
+											<a
+												href="https://github.com/jordanlahipramelb/the-fitness-journey"
+												target="_blank"
+											>
+												<button type="button" className="btn btn-outline-info">
+													GitHub
+												</button>
+											</a>
 											<a
 												href="https://thefitnessjourney.herokuapp.com/"
 												target="_blank"
@@ -133,9 +137,14 @@ const Projects = () => {
 										</p>
 
 										<div className="btn-group" role="group">
-											<button type="button" className="btn btn-outline-info">
-												GitHub
-											</button>
+											<a
+												href="https://github.com/jordanlahipramelb/bowling-mvp"
+												target="_blank"
+											>
+												<button type="button" className="btn btn-outline-info">
+													GitHub
+												</button>
+											</a>
 											<a
 												href="https://bowling-mvp.herokuapp.com/"
 												target="_blank"
