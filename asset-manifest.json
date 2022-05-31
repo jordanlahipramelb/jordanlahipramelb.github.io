@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bdbc10ac.css",
+    "main.js": "/static/js/main.117058d6.js",
+    "static/js/787.1297335f.chunk.js": "/static/js/787.1297335f.chunk.js",
+    "static/media/thefitnessjourney.png": "/static/media/thefitnessjourney.c2e9d6a1461c99b5448c.png",
+    "static/media/bowlingmvp.png": "/static/media/bowlingmvp.ecfd070213e74a1b6b49.png",
+    "static/media/Resume.pdf": "/static/media/Resume.748440c35232cecd997e.pdf",
+    "static/media/sass.png": "/static/media/sass.c556a176a8b7d49fb670.png",
+    "static/media/python.png": "/static/media/python.9431343c453e999f63a7.png",
+    "static/media/flask.png": "/static/media/flask.4808338d5b8c34314557.png",
+    "static/media/react.png": "/static/media/react.0cf951a69d8e58f83f9d.png",
+    "static/media/node.png": "/static/media/node.952a9ea986dcfa5229ad.png",
+    "static/media/express.png": "/static/media/express.cca64e0f360897258ecb.png",
+    "static/media/helvetica-neu.ttf": "/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
+    "static/media/github.png": "/static/media/github.3b9e32903aa89111875d.png",
+    "static/media/LaBelleAurore.woff": "/static/media/LaBelleAurore.9c5433c64baa43d1d274.woff",
+    "static/media/html.png": "/static/media/html.2ba4fabc69a89a8f71e6.png",
+    "static/media/css.png": "/static/media/css.69a82c2d9e45c933a9cb.png",
+    "static/media/CoolveticaRg-Regular.woff": "/static/media/CoolveticaRg-Regular.8307bfa187bccdc55f4d.woff",
+    "static/media/postgresql.png": "/static/media/postgresql.8d16a94b547bc26b48fe.png",
+    "static/media/sqla.png": "/static/media/sqla.df81160667f3d7896981.png",
+    "static/media/javascript.png": "/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
+    "index.html": "/index.html",
+    "static/media/redux.svg": "/static/media/redux.0e4fb1c819ac4c060c92343147d4ccf7.svg",
+    "static/media/bootstrap.svg": "/static/media/bootstrap.d180fe4cd44732fd70b35f650a76b99c.svg",
+    "main.bdbc10ac.css.map": "/static/css/main.bdbc10ac.css.map",
+    "main.117058d6.js.map": "/static/js/main.117058d6.js.map",
+    "787.1297335f.chunk.js.map": "/static/js/787.1297335f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bdbc10ac.css",
+    "static/js/main.117058d6.js"
+  ]
+}
