@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import AnimatedLetters from "../AnimatedLetters";
+
 import "./Header.scss";
 import { useEffect, useState } from "react";
 import Footer from "../Footer/Footer";
@@ -8,46 +7,6 @@ import Loader from "react-loaders";
 
 const Header = () => {
 	const [letterClass, setLetterClass] = useState("text-animate");
-	const nameArr = [
-		"J",
-		"o",
-		"r",
-		"d",
-		"a",
-		"n",
-		" ",
-		"L",
-		"a",
-		"h",
-		"i",
-		"p",
-		"-",
-		"R",
-		"a",
-		"m",
-		"e",
-		"l",
-		"b",
-	];
-	const jobArr = [
-		"s",
-		"o",
-		"f",
-		"t",
-		"w",
-		"a",
-		"r",
-		"e",
-		" ",
-		"e",
-		"n",
-		"g",
-		"i",
-		"n",
-		"e",
-		"e",
-		"r",
-	];
 
 	// runs once
 	// sets class names from 'text-animate' to 'text-animate-hover'
