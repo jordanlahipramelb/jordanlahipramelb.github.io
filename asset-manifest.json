@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6f316d47.css",
-    "main.js": "/static/js/main.4104d494.js",
-    "static/js/787.3566300c.chunk.js": "/static/js/787.3566300c.chunk.js",
+    "main.css": "/static/css/main.d55cdebf.css",
+    "main.js": "/static/js/main.95159637.js",
     "static/media/thefitnessjourney.png": "/static/media/thefitnessjourney.c2e9d6a1461c99b5448c.png",
     "static/media/bowlingmvp.png": "/static/media/bowlingmvp.ecfd070213e74a1b6b49.png",
     "static/media/Resume.pdf": "/static/media/Resume.4d644b5c204c523cfd6b.pdf",
@@ -13,7 +12,6 @@
     "static/media/node.png": "/static/media/node.952a9ea986dcfa5229ad.png",
     "static/media/express.png": "/static/media/express.cca64e0f360897258ecb.png",
     "static/media/helvetica-neu.ttf": "/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
-    "static/media/github.png": "/static/media/github.3b9e32903aa89111875d.png",
     "static/media/LaBelleAurore.woff": "/static/media/LaBelleAurore.9c5433c64baa43d1d274.woff",
     "static/media/html.png": "/static/media/html.2ba4fabc69a89a8f71e6.png",
     "static/media/css.png": "/static/media/css.69a82c2d9e45c933a9cb.png",
@@ -24,12 +22,11 @@
     "index.html": "/index.html",
     "static/media/redux.svg": "/static/media/redux.0e4fb1c819ac4c060c92343147d4ccf7.svg",
     "static/media/bootstrap.svg": "/static/media/bootstrap.d180fe4cd44732fd70b35f650a76b99c.svg",
-    "main.6f316d47.css.map": "/static/css/main.6f316d47.css.map",
-    "main.4104d494.js.map": "/static/js/main.4104d494.js.map",
-    "787.3566300c.chunk.js.map": "/static/js/787.3566300c.chunk.js.map"
+    "main.d55cdebf.css.map": "/static/css/main.d55cdebf.css.map",
+    "main.95159637.js.map": "/static/js/main.95159637.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f316d47.css",
-    "static/js/main.4104d494.js"
+    "static/css/main.d55cdebf.css",
+    "static/js/main.95159637.js"
   ]
 }
