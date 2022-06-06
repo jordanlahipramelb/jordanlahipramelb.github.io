@@ -1,23 +1,10 @@
-import Loader from "react-loaders";
-import AnimatedLetters from "../AnimatedLetters";
-import { useState, useEffect, useRef } from "react";
+import { useRef, useEffect } from "react";
 import "./Contact.scss";
 import emailjs from "@emailjs/browser";
-import { MapContainer, Marker, TileLayer } from "react-leaflet";
-import Footer from "../Footer/Footer";
+import AOS from "aos";
 
 const Contact = () => {
-	const [letterClass, setLetterClass] = useState("text-animate");
 	const refForm = useRef();
-
-	// runs once
-	// sets class names from 'text-animate' to 'text-animate-hover'
-	// after 4 seconds in order to use animation for class
-	useEffect(() => {
-		setTimeout(() => {
-			setLetterClass("text-animate-hover");
-		}, 3000);
-	}, []);
 
 	const sendEmail = (e) => {
 		e.preventDefault();
@@ -39,29 +26,51 @@ const Contact = () => {
 				}
 			);
 	};
+
+	useEffect(() => {
+		AOS.init({ duration: 2000 });
+	}, []);
 	return (
 		<>
-			<div className="contact-page pt-2 pt-sm-3 pt-md-2">
+			<div name="contact" className="contact-page px-2 px-sm-3 px-md-4">
 				<div className="container">
 					<div className="row">
-						<p className="title">
-							<AnimatedLetters
-								letterClass={letterClass}
-								strArr={["C", "o", "n", "t", "a", "c", "t", " ", "m", "e"]}
-								idx={15}
-							/>
+						<p
+							className="title"
+							data-aos="fade-up"
+							data-aos-offset="200"
+							data-aos-delay="50"
+						>
+							<span className="text-animate-hover">C</span>
+							<span className="text-animate-hover">o</span>
+							<span className="text-animate-hover">n</span>
+							<span className="text-animate-hover">t</span>
+							<span className="text-animate-hover">a</span>
+							<span className="text-animate-hover">c</span>
+							<span className="text-animate-hover">t</span>
+							<span className="text-animate-hover"> </span>
+							<span className="text-animate-hover">m</span>
+							<span className="text-animate-hover">e</span>
 						</p>
-						<p className="info">
-							If you have any questions, fill out the form below and I will get
-							back to you as soon as possible!
-						</p>
+
+						<div className="description pb-1">
+							<div className="row">
+								<p data-aos="fade-up" data-aos-offset="200" data-aos-delay="60">
+									If you have any questions, fill out the form below and I will
+									get back to you as soon as possible!
+								</p>
+							</div>
+						</div>
 					</div>
 
-					{/* <div className="row">
-					<div className=" col-xs-12 col-sm-6"> */}
 					<div className="contact-form">
 						<form className="row" ref={refForm} onSubmit={sendEmail}>
-							<div className="col-md-6">
+							<div
+								className="col-md-6"
+								data-aos="fade-up"
+								data-aos-offset="200"
+								data-aos-delay="50"
+							>
 								<input
 									type="text"
 									name="name"
@@ -70,7 +79,12 @@ const Contact = () => {
 									required
 								/>
 							</div>
-							<div className="col-md-6">
+							<div
+								className="col-md-6"
+								data-aos="fade-up"
+								data-aos-offset="200"
+								data-aos-delay="50"
+							>
 								<input
 									placeholder="Subject"
 									type="text"
@@ -79,7 +93,12 @@ const Contact = () => {
 									required
 								/>
 							</div>
-							<div className="col-12">
+							<div
+								className="col-12"
+								data-aos="fade-up"
+								data-aos-offset="200"
+								data-aos-delay="50"
+							>
 								<input
 									type="email"
 									name="email"
@@ -88,7 +107,12 @@ const Contact = () => {
 									required
 								/>
 							</div>
-							<div className="col-12">
+							<div
+								className="col-12"
+								data-aos="fade-up"
+								data-aos-offset="200"
+								data-aos-delay="50"
+							>
 								<textarea
 									placeholder="Message"
 									name="message"
@@ -114,9 +138,6 @@ const Contact = () => {
 					</div>
 				</div>
 			</div>
-			<Footer />
-
-			<Loader type="pacman" />
 		</>
 	);
 };

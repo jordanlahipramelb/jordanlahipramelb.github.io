@@ -9,9 +9,9 @@ import React from "react";
 import "./Footer.scss";
 import Resume from "../../assets/Resume.pdf";
 
-function Footer({ className }) {
+function Footer() {
 	return (
-		<footer className={`footer ${className}`}>
+		<footer className="footer fixed-bottom">
 			<div className="container">
 				<div className="footer-social-links">
 					<a

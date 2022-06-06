@@ -1,6 +1,4 @@
-import Loader from "react-loaders";
-import AnimatedLetters from "../AnimatedLetters";
-import { useState, useEffect, useRef } from "react";
+import { useEffect } from "react";
 import "./Projects.scss";
 import fitnessImg from "../../assets/images/thefitnessjourney.png";
 import bowlingImg from "../../assets/images/bowlingmvp.png";
@@ -19,44 +17,52 @@ import PostgreSQL from "../../assets/images/postgresql.png";
 import SQLA from "../../assets/images/sqla.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBowlingBall, faDumbbell } from "@fortawesome/free-solid-svg-icons";
-import Footer from "../Footer/Footer";
+import AOS from "aos";
 
 const Projects = () => {
-	const [letterClass, setLetterClass] = useState("text-animate");
-
-	// runs once
-	// sets class names from 'text-animate' to 'text-animate-hover'
-	// after 4 seconds in order to use animation for class
 	useEffect(() => {
-		setTimeout(() => {
-			setLetterClass("text-animate-hover");
-		}, 3000);
+		AOS.init({ duration: 2000 });
 	}, []);
 
 	return (
 		<>
-			<div className="projects-page pt-2 pt-sm-3 pt-md-2">
+			<div name="projects" className="projects-page px-2 px-sm-3 px-md-4">
 				<div className="container">
 					<div className="row">
-						<p className="title">
-							<AnimatedLetters
-								letterClass={letterClass}
-								strArr={["P", "r", "o", "j", "e", "c", "t", "s"]}
-								idx={12}
-							/>
+						<p
+							className="title"
+							data-aos="fade-up"
+							data-aos-offset="200"
+							data-aos-delay="40"
+						>
+							<span className="text-animate-hover">P</span>
+							<span className="text-animate-hover">r</span>
+							<span className="text-animate-hover">o</span>
+							<span className="text-animate-hover">j</span>
+							<span className="text-animate-hover">e</span>
+							<span className="text-animate-hover">c</span>
+							<span className="text-animate-hover">t</span>
+							<span className="text-animate-hover">s</span>
 						</p>
 					</div>
 
-					<div className="description">
+					<div className="description pb-3">
 						<div className="row">
-							<p>Check out some of my recent work.</p>
+							<p data-aos="fade-up" data-aos-offset="200" data-aos-delay="50">
+								Check out some of my recent work.
+							</p>
 						</div>
 					</div>
 
 					<div className="projects">
 						<div className="row row-cols-1 row-cols-sm-1 row-cols-md-2">
 							<div className="col">
-								<div className="card">
+								<div
+									className="card my-1"
+									data-aos="fade-up"
+									data-aos-offset="200"
+									data-aos-delay="60"
+								>
 									<a
 										href="https://thefitnessjourney.herokuapp.com/"
 										target="_blank"
@@ -116,7 +122,12 @@ const Projects = () => {
 								</div>
 							</div>
 							<div className="col">
-								<div className="card">
+								<div
+									className="card my-1"
+									data-aos="fade-up"
+									data-aos-offset="200"
+									data-aos-delay="80"
+								>
 									<a href="https://bowling-mvp.herokuapp.com/" target="_blank">
 										<img
 											src={bowlingImg}
@@ -178,9 +189,6 @@ const Projects = () => {
 					</div>
 				</div>
 			</div>
-			<Footer />
-
-			<Loader type="pacman" />
 		</>
 	);
 };

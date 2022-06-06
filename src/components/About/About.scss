@@ -1,154 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+
 .about-page {
-	.title {
-		font-size: 3.4rem;
-		letter-spacing: 1px;
-		font-family: "Coolvetica";
-		font-weight: 400;
-		color: #ffffff;
-		left: 20px;
-		position: relative;
+	.container {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 
-		&::before {
-			content: "<h1>";
-			font-family: "La Belle Aurore";
-			color: #5eafbd;
-			font-size: 18px;
-			line-height: 18px;
-			position: absolute;
-			left: -1px;
-			opacity: 0.5;
-		}
-
-		&::after {
-			content: "</h1>";
-			font-family: "La Belle Aurore";
-			font-size: 18px;
-			position: absolute;
-			color: #5eafbd;
-			line-height: 18px;
-			bottom: -5px;
-			left: -1px;
-			opacity: 0.5;
-		}
-	}
-
-	.intro {
-		line-height: 3.3rem !important;
-		letter-spacing: 1px;
-		font-size: 3.3rem !important;
-		font-weight: bolder !important;
-		color: #5eafbd !important;
-		padding-bottom: 2px;
-		// opacity: 0;
-	}
-
-	.description {
-		p {
-			font-size: 13px;
-			color: #fff;
-			font-family: "Raleway";
-			font-weight: 300;
-			animation: pulse 1.4s;
-			line-height: 22px;
-
-			&:nth-of-type(1) {
-				animation-delay: 1.3s;
-			}
-			&:nth-of-type(2) {
-				animation-delay: 1.4s;
-			}
-			&:nth-of-type(3) {
-				animation-delay: 1.5s;
-			}
-		}
-	}
-
-	@media screen and (max-width: 400px) {
 		.title {
-			font-size: 3rem;
+			font-size: 3.4rem;
+			letter-spacing: 1px;
+			font-family: "Coolvetica";
+			font-weight: 400;
+			border-bottom: #5eafbd96 solid 5px;
 		}
 
 		.intro {
-			font-size: 2rem !important;
+			line-height: 3.7rem !important;
+			letter-spacing: 5px;
+			font-size: 4rem !important;
+			font-weight: bolder !important;
+			color: #5eafbd !important;
+			padding-bottom: 2px;
+			font-family: "Shadows Into Light", cursive !important;
+
+			// opacity: 0;
+		}
+
+		.description {
+			p {
+				font-size: 13px;
+				color: #fff;
+				font-weight: 300;
+
+				line-height: 22px;
+			}
+		}
+
+		@media screen and (max-width: 400px) {
+			.title {
+				font-size: 3rem;
+			}
+
+			.intro {
+				font-size: 3.1rem !important;
+				letter-spacing: 1px;
+			}
 		}
 	}
 }
-
-// .cube {
-// 	width: 100%;
-
-// top: 0;
-// padding-top: 18%;
-// margin-left: 0;
-// right: 0;
-// overflow: hidden;
-// }
-
-// .cube-spinner {
-// 	animation-name: spincube;
-// 	animation-timing-function: ease-in-out;
-// 	animation-iteration-count: infinite;
-// 	animation-duration: 13s;
-// 	transform-style: preserve-3d;
-// 	transform-origin: 100px 100px 0;
-// 	margin-left: calc(50% - 100px);
-
-// 	div {
-// 		position: absolute;
-// 		width: 200px;
-// 		height: 200px;
-// 		border: 1px solid #ccc;
-// 		background: rgba(255, 255, 255, 0.5);
-// 		font-size: 180px;
-// 		display: flex;
-// 		justify-content: center;
-// 		align-items: center;
-// 		box-shadow: 0 0 20px 0px #fdffd5;
-// 	}
-
-// 	.face1 {
-// 		transform: translateZ(100px);
-// 	}
-// 	.face2 {
-// 		transform: rotateY(90deg) translateZ(100px);
-// 	}
-// 	.face3 {
-// 		transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
-// 	}
-// 	.face4 {
-// 		transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
-// 	}
-// 	.face5 {
-// 		transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
-// 	}
-// 	.face6 {
-// 		transform: rotateX(-90deg) translateZ(100px);
-// 	}
-// }
-
-// @keyframes spincube {
-// 	from,
-// 	to {
-// 		transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-// 	}
-
-// 	16% {
-// 		transform: rotateY(-90deg);
-// 	}
-
-// 	33% {
-// 		transform: rotateY(-90deg) rotateZ(90deg);
-// 	}
-
-// 	50% {
-// 		transform: rotateY(-180deg) rotateZ(90deg);
-// 	}
-
-// 	66% {
-// 		transform: rotateY(-270deg) rotateZ(90deg);
-// 	}
-
-// 	83% {
-// 		transform: rotateX(90deg);
-// 	}
-// }

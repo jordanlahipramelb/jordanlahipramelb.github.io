@@ -1,5 +1,3 @@
-import AnimatedLetters from "../AnimatedLetters";
-import { useState, useEffect } from "react";
 import "./Skills.scss";
 import HTML from "../../assets/images/html.png";
 import CSS from "../../assets/images/css.png";
@@ -13,42 +11,47 @@ import Express from "../../assets/images/express.png";
 import Python from "../../assets/images/python.png";
 import Flask from "../../assets/images/flask.png";
 import PostgreSQL from "../../assets/images/postgresql.png";
-import GitHub from "../../assets/images/github.png";
-import Footer from "../Footer/Footer";
-import Loader from "react-loaders";
+import AOS from "aos";
+import { useEffect } from "react";
 
 const Skills = () => {
-	const [letterClass, setLetterClass] = useState("text-animate");
-
-	// runs once
-	// sets class names from 'text-animate' to 'text-animate-hover'
-	// after 4 seconds in order to use animation for class
 	useEffect(() => {
-		setTimeout(() => {
-			setLetterClass("text-animate-hover");
-		}, 3000);
+		AOS.init({ duration: 2000 });
 	}, []);
 
 	return (
 		<>
-			<div className="skills-page pt-2 pt-sm-3 pt-md-4">
+			<div name="skills" className="skills-page px-2 px-sm-3 px-md-4">
 				<div className="container">
 					<div className="row">
-						<p className="title">
-							<AnimatedLetters
-								letterClass={letterClass}
-								strArr={["S", "k", "i", "l", "l", "s"]}
-								idx={12}
-							/>
+						<p
+							className="title"
+							data-aos="fade-up"
+							data-aos-offset="200"
+							data-aos-delay="50"
+						>
+							<span className="text-animate-hover">S</span>
+							<span className="text-animate-hover">k</span>
+							<span className="text-animate-hover">i</span>
+							<span className="text-animate-hover">l</span>
+							<span className="text-animate-hover">l</span>
+							<span className="text-animate-hover">s</span>
 						</p>
 					</div>
 					<div className="description">
 						<div className="row">
-							<p>These are the technologies I've worked with.</p>
+							<p data-aos="fade-up" data-aos-offset="200" data-aos-delay="60">
+								These are the technologies I've worked with.
+							</p>
 						</div>
 					</div>
 
-					<div className="images">
+					<div
+						className="images"
+						data-aos="fade-up"
+						data-aos-offset="200"
+						data-aos-delay="70"
+					>
 						<div className="row row-cols-sm-3 row-cols-md-6">
 							<div className="col">
 								<img src={HTML} alt="HTML" />
@@ -104,10 +107,6 @@ const Skills = () => {
 					</div>
 				</div>
 			</div>
-
-			<Footer />
-
-			<Loader type="pacman" />
 		</>
 	);
 };

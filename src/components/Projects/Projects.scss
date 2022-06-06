@@ -1,5 +1,6 @@
 .projects-page {
-	overflow: hidden;
+	margin-top: 5rem;
+	margin-bottom: 18rem;
 
 	@media screen and (max-width: 400px) {
 		width: 100%;
@@ -30,78 +31,57 @@
 		}
 	}
 
-	.title {
-		font-size: 3.4rem;
-		font-family: "Coolvetica";
-		left: 20px;
-		position: relative;
+	.container {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 
-		span {
-			letter-spacing: 3px;
-		}
+		.title {
+			font-size: 3rem;
+			font-family: "Coolvetica";
+			border-bottom: #5eafbd96 solid 5px;
 
-		&::before {
-			content: "<h1>";
-			font-family: "La Belle Aurore";
-			color: #5eafbd;
-			font-size: 18px;
-			line-height: 18px;
-			position: absolute;
-			left: -1px;
-			opacity: 0.5;
-		}
-
-		&::after {
-			content: "</h1>";
-			font-family: "La Belle Aurore";
-			font-size: 18px;
-			position: absolute;
-			color: #5eafbd;
-			line-height: 18px;
-			bottom: -5px;
-			left: -1px;
-			opacity: 0.5;
-		}
-	}
-
-	.description {
-		animation: fadeIn 2s 2s backwards;
-	}
-
-	.projects {
-		.card {
-			background-color: rgb(0, 0, 0, 0);
-			border-color: rgb(0, 0, 0, 0);
-			animation: fadeInUp 2s 2.5s backwards;
-
-			a {
-				img {
-					transition: 0.3s;
-
-					&:hover {
-						opacity: 0.5;
-					}
-				}
+			span {
+				letter-spacing: 3px;
 			}
+		}
 
-			.card-title {
-				margin-bottom: 1rem;
-				letter-spacing: 1px;
-			}
-
-			.card-footer {
-				text-align: center;
-				margin-top: 1rem;
+		.projects {
+			.card {
 				background-color: rgb(0, 0, 0, 0);
 				border-color: rgb(0, 0, 0, 0);
+				box-shadow: 3px 6px 16px -4px rgba(0, 0, 0, 0.45);
 
-				img {
-					margin: 4px;
-					width: 2rem;
-					transition: 0.3s;
+				a {
+					img {
+						transition: 0.3s;
 
-					&:hover {
-						transform: scale(2.2);
+						&:hover {
+							opacity: 0.5;
+						}
+					}
+				}
+
+				.card-title {
+					margin-bottom: 1rem;
+					letter-spacing: 1px;
+				}
+
+				.card-footer {
+					text-align: center;
+					margin-top: 1rem;
+					background-color: rgb(0, 0, 0, 0);
+					border-color: rgb(0, 0, 0, 0);
+
+					img {
+						margin: 4px;
+						width: 2rem;
+						transition: 0.3s;
+
+						&:hover {
+							transform: scale(2.2);
+						}
 					}
 				}
 			}
