@@ -21,7 +21,7 @@ import AOS from "aos";
 
 const Projects = () => {
 	useEffect(() => {
-		AOS.init({ duration: 2000 });
+		AOS.init({ duration: 2000, once: true });
 	}, []);
 
 	return (
@@ -29,12 +29,7 @@ const Projects = () => {
 			<div name="projects" className="projects-page px-2 px-sm-3 px-md-4">
 				<div className="container">
 					<div className="row">
-						<p
-							className="title"
-							data-aos="fade-up"
-							data-aos-offset="200"
-							data-aos-delay="40"
-						>
+						<p className="title" data-aos="fade-up" data-aos-delay="40">
 							<span className="text-animate-hover">P</span>
 							<span className="text-animate-hover">r</span>
 							<span className="text-animate-hover">o</span>
@@ -60,7 +55,6 @@ const Projects = () => {
 								<div
 									className="card my-1"
 									data-aos="fade-up"
-									data-aos-offset="200"
 									data-aos-delay="60"
 								>
 									<a
@@ -125,7 +119,6 @@ const Projects = () => {
 								<div
 									className="card my-1"
 									data-aos="fade-up"
-									data-aos-offset="200"
 									data-aos-delay="80"
 								>
 									<a href="https://bowling-mvp.herokuapp.com/" target="_blank">

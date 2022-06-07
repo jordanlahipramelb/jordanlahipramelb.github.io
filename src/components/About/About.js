@@ -4,7 +4,7 @@ import "./About.scss";
 
 const About = () => {
 	useEffect(() => {
-		AOS.init({ duration: 2000 });
+		AOS.init({ duration: 2000, once: true });
 	}, []);
 
 	return (
@@ -13,7 +13,7 @@ const About = () => {
 				<div className="container">
 					<div className="row">
 						<div className="col-xs-12 col-sm-6 text-sm-start text-md-end">
-							<p className="title" data-aos="fade-up" data-aos-delay="40">
+							<p className="title" data-aos="fade-up" data-aos-delay="100">
 								<span className="text-animate-hover">A</span>
 								<span className="text-animate-hover">b</span>
 								<span className="text-animate-hover">o</span>
@@ -29,12 +29,17 @@ const About = () => {
 					<div className="description">
 						<div className="row">
 							<div className="col-xs-12 col-sm-6 text-sm-center text-md-end">
-								<p className="intro" data-aos="fade-up" data-aos-delay="50">
+								<p
+									className="intro"
+									data-aos="fade-up"
+									data-aos-delay="200"
+									data-aos-once="true"
+								>
 									Hi! I'm Jordan, nice to meet you.
 								</p>
 							</div>
 							<div className="col-xs-12 col-sm-6">
-								<p data-aos="fade-up" data-aos-offset="200" data-aos-delay="60">
+								<p data-aos="fade-up" data-aos-delay="300" data-aos-once="true">
 									I am a software engineer currently working in the healthcare
 									field. This has helped me build a strong foundation of soft
 									skills relating to communication, teamwork, time-management,
@@ -42,7 +47,7 @@ const About = () => {
 									system as well as creating home exercise programs using a web
 									application.
 								</p>
-								<p data-aos="fade-up" data-aos-offset="200" data-aos-delay="70">
+								<p data-aos="fade-up" data-aos-delay="400" data-aos-once="true">
 									Growing up, I always loved tech. I decided to take a leap and
 									train in modern app development at Springboard, completing
 									both their prep program and Software Engineering Career Track,
@@ -50,7 +55,7 @@ const About = () => {
 									programming principles.
 								</p>
 
-								<p data-aos="fade-up" data-aos-offset="200" data-aos-delay="80">
+								<p data-aos="fade-up" data-aos-delay="500">
 									I love challenges and am constantly searching for ways to
 									improve myself. I'm searching for an organization that I can
 									help develop, grow, and expand my skills with the latest

@@ -2,10 +2,11 @@ import React from "react";
 import AOS from "aos";
 import "./Header.scss";
 import { useEffect } from "react";
+// import Loader from "react-loaders";
 
 const Header = () => {
 	useEffect(() => {
-		AOS.init({ duration: 2000 });
+		AOS.init({ duration: 2000, once: true });
 	}, []);
 
 	return (
@@ -74,6 +75,7 @@ const Header = () => {
 					</div>
 				</div>
 			</div>
+			{/* <Loader type="pacman" /> */}
 		</>
 	);
 };

@@ -18,13 +18,13 @@ const Navbar = () => {
 
 			{/* Menu */}
 			<ul className="menu d-none d-md-flex">
-				<Link to="home" spy={true} smooth={true} offset={50}>
+				<Link to="home" spy={true} smooth={true} offset={50} duration={300}>
 					HOME
 				</Link>
-				<Link to="about" spy={true} smooth={true} offset={50}>
+				<Link to="about" spy={true} smooth={true} offset={50} duration={300}>
 					ABOUT
 				</Link>
-				<Link to="skills" spy={true} smooth={true} offset={50} duration={500}>
+				<Link to="skills" spy={true} smooth={true} offset={50} duration={300}>
 					SKILLS
 				</Link>
 				<Link
@@ -32,11 +32,11 @@ const Navbar = () => {
 					spy={true}
 					smooth={true}
 					offset={-50}
-					duration={500}
+					duration={300}
 				>
 					PROJECTS
 				</Link>
-				<Link to="contact" spy={true} smooth={true} offset={50} duration={500}>
+				<Link to="contact" spy={true} smooth={true} offset={50} duration={300}>
 					CONTACT
 				</Link>
 				<a href={Resume} download title="Download Resume" className="resume">
@@ -63,7 +63,7 @@ const Navbar = () => {
 					onClick={handleClick}
 					spy={true}
 					smooth={true}
-					duration={500}
+					duration={300}
 				>
 					HOME
 				</Link>
@@ -72,7 +72,7 @@ const Navbar = () => {
 					onClick={handleClick}
 					spy={true}
 					smooth={true}
-					duration={500}
+					duration={300}
 				>
 					ABOUT
 				</Link>
@@ -81,7 +81,7 @@ const Navbar = () => {
 					onClick={handleClick}
 					spy={true}
 					smooth={true}
-					duration={500}
+					duration={300}
 				>
 					SKILLS
 				</Link>
@@ -91,7 +91,7 @@ const Navbar = () => {
 					spy={true}
 					smooth={true}
 					offset={-350}
-					duration={500}
+					duration={300}
 				>
 					PROJECTS
 				</Link>
@@ -100,7 +100,7 @@ const Navbar = () => {
 					onClick={handleClick}
 					spy={true}
 					smooth={true}
-					duration={500}
+					duration={300}
 				>
 					CONTACT
 				</Link>
