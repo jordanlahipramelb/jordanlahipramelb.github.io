@@ -55,7 +55,7 @@ const Projects = () => {
 					</div>
 
 					<div className="projects">
-						<div className="row row-cols-1 row-cols-sm-1 row-cols-md-3">
+						<div className="row row-cols-1 row-cols-sm-1 row-cols-md-2">
 							<div className="col">
 								<div
 									className="card my-1"
