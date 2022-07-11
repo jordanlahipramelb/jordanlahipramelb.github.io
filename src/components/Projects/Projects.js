@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import "./Projects.scss";
 import fitnessImg from "../../assets/images/thefitnessjourney.png";
 import bowlingImg from "../../assets/images/bowlingmvp.png";
+import tbbcImg from "../../assets/images/tbbc.png";
 import HTML from "../../assets/images/html.png";
 import CSS from "../../assets/images/css.png";
 import Bootstrap from "../../assets/images/bootstrap.svg";
@@ -16,7 +17,11 @@ import Flask from "../../assets/images/flask.png";
 import PostgreSQL from "../../assets/images/postgresql.png";
 import SQLA from "../../assets/images/sqla.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBowlingBall, faDumbbell } from "@fortawesome/free-solid-svg-icons";
+import {
+	faBowlingBall,
+	faDumbbell,
+	faShoppingBag,
+} from "@fortawesome/free-solid-svg-icons";
 import AOS from "aos";
 
 const Projects = () => {
@@ -26,7 +31,7 @@ const Projects = () => {
 
 	return (
 		<>
-			<div name="projects" className="projects-page px-2 px-sm-3 px-md-4">
+			<div name="projects" className="projects-page px-4 px-sm-5 px-md-4">
 				<div className="container">
 					<div className="row">
 						<p className="title" data-aos="fade-up" data-aos-delay="40">
@@ -50,7 +55,7 @@ const Projects = () => {
 					</div>
 
 					<div className="projects">
-						<div className="row row-cols-1 row-cols-sm-1 row-cols-md-2">
+						<div className="row row-cols-1 row-cols-sm-1 row-cols-md-3">
 							<div className="col">
 								<div
 									className="card my-1"
@@ -174,6 +179,64 @@ const Projects = () => {
 											<img src={Flask} alt="Flask" />
 											<img src={PostgreSQL} alt="PostgreSQL" />
 											<img src={SQLA} alt="SQLAlchemy" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div className="col">
+								<div
+									className="card my-1"
+									data-aos="fade-up"
+									data-aos-delay="80"
+								>
+									<a
+										href="https://thiccboyzbowlingclub-shop.vercel.app/"
+										target="_blank"
+									>
+										<img
+											src={tbbcImg}
+											className="card-img-top"
+											alt="TBBC Screenshot"
+										/>
+									</a>
+									<div className="card-body">
+										<h5 className="card-title">
+											<FontAwesomeIcon icon={faShoppingBag} /> Thicc Boyz
+											eCommerce
+										</h5>
+										<p className="card-text">
+											ECommerce website that allows users to navigate through
+											its products and allows them to add/remove these products
+											from their cart. Furthermore, the user is able to complete
+											checkout with the integration of Stripe.
+										</p>
+
+										<div className="btn-group" role="group">
+											<a
+												href="https://github.com/jordanlahipramelb/thiccboyz-ecommerce"
+												target="_blank"
+											>
+												<button type="button" className="btn btn-outline-info">
+													GitHub
+												</button>
+											</a>
+											<a
+												href="https://thiccboyzbowlingclub-shop.vercel.app/"
+												target="_blank"
+											>
+												<button type="button" className="btn btn-outline-info">
+													Demo
+												</button>
+											</a>
+										</div>
+										<br />
+										<br />
+
+										<div className="card-footer">
+											<img src={HTML} alt="HTML" />
+											<img src={JavaScript} alt="JavaScript" />
+											<img src={ReactImg} alt="React" />
+											<img src={CSS} alt="CSS" />
 										</div>
 									</div>
 								</div>
