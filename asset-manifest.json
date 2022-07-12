@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.6305cdcc.css",
-    "main.js": "/static/js/main.89727095.js",
+    "main.js": "/static/js/main.e0a9fefc.js",
     "static/media/thefitnessjourney.png": "/static/media/thefitnessjourney.c2e9d6a1461c99b5448c.png",
     "static/media/bowlingmvp.png": "/static/media/bowlingmvp.ecfd070213e74a1b6b49.png",
     "static/media/tbbc.png": "/static/media/tbbc.e7eae99fd4d1e0d4be1d.png",
@@ -20,14 +20,15 @@
     "static/media/postgresql.png": "/static/media/postgresql.8d16a94b547bc26b48fe.png",
     "static/media/sqla.png": "/static/media/sqla.df81160667f3d7896981.png",
     "static/media/javascript.png": "/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
+    "static/media/nextjs.png": "/static/media/nextjs.2b05ac76365076dc3243.png",
     "index.html": "/index.html",
     "static/media/redux.svg": "/static/media/redux.0e4fb1c819ac4c060c92343147d4ccf7.svg",
     "static/media/bootstrap.svg": "/static/media/bootstrap.d180fe4cd44732fd70b35f650a76b99c.svg",
     "main.6305cdcc.css.map": "/static/css/main.6305cdcc.css.map",
-    "main.89727095.js.map": "/static/js/main.89727095.js.map"
+    "main.e0a9fefc.js.map": "/static/js/main.e0a9fefc.js.map"
   },
   "entrypoints": [
     "static/css/main.6305cdcc.css",
-    "static/js/main.89727095.js"
+    "static/js/main.e0a9fefc.js"
   ]
 }
