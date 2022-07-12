@@ -16,6 +16,9 @@ import Python from "../../assets/images/python.png";
 import Flask from "../../assets/images/flask.png";
 import PostgreSQL from "../../assets/images/postgresql.png";
 import SQLA from "../../assets/images/sqla.png";
+import Nextjs from "../../assets/images/nextjs.png";
+import Sanity from "../../assets/images/sanity.png";
+import Stripe from "../../assets/images/stripe.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faBowlingBall,
@@ -23,6 +26,7 @@ import {
 	faShoppingBag,
 } from "@fortawesome/free-solid-svg-icons";
 import AOS from "aos";
+import Card from "./Card/Card";
 
 const Projects = () => {
 	useEffect(() => {
@@ -57,189 +61,81 @@ const Projects = () => {
 					<div className="projects">
 						<div className="row row-cols-1 row-cols-sm-1 row-cols-md-2">
 							<div className="col">
-								<div
-									className="card my-1"
-									data-aos="fade-up"
-									data-aos-delay="60"
-								>
-									<a
-										href="https://thefitnessjourney.herokuapp.com/"
-										target="_blank"
-									>
-										<img
-											src={fitnessImg}
-											className="card-img-top"
-											alt="The Fitness Journey Screenshot"
-										/>
-									</a>
-									<div className="card-body">
-										<h5 className="card-title">
-											<FontAwesomeIcon icon={faDumbbell} /> The Fitness Journey
-										</h5>
-										<p className="card-text">
-											A fitness tracker/blog that allows users to create/log
-											workout routines, learn how to perform a variety of
-											exercises, and ask questions/search topics via forum
-											system.
-										</p>
-										<div className="btn-group" role="group">
-											<a
-												href="https://github.com/jordanlahipramelb/the-fitness-journey"
-												target="_blank"
-											>
-												<button type="button" className="btn btn-outline-info">
-													GitHub
-												</button>
-											</a>
-											<a
-												href="https://thefitnessjourney.herokuapp.com/"
-												target="_blank"
-											>
-												<button type="button" className="btn btn-outline-info">
-													Demo
-												</button>
-											</a>
-										</div>
-										<br />
-										<br />
-										<p className="text-muted">
-											Project is hosted on Heroku. Please allow a couple of
-											minutes for application to load.
-										</p>
-
-										<div className="card-footer">
-											<img src={HTML} alt="HTML" />
-											<img src={JavaScript} alt="JavaScript" />
-											<img src={CSS} alt="CSS" />
-											<img src={Bootstrap} alt="Bootstrap" />
-											<img src={ReactImg} alt="React" />
-											<img src={Node} alt="Node" />
-											<img src={Express} alt="Express" />
-											<img src={PostgreSQL} alt="PostgreSQL" />
-										</div>
-									</div>
-								</div>
+								<Card
+									linkDemo={"https://thefitnessjourney.herokuapp.com/"}
+									linkGithub={
+										"https://github.com/jordanlahipramelb/the-fitness-journey"
+									}
+									iconTitleImg={faDumbbell}
+									title={"The Fitness Journey"}
+									description={
+										"A fitness tracker/blog that allows users to create/log workout routines, learn how to perform a variety of exercises, and ask questions/search topics via forum system."
+									}
+									smallText={
+										"	Project is hosted on Heroku. Please allow a couple of minutes for application to load."
+									}
+									screenshotImg={fitnessImg}
+									technologies={[
+										{ icon: HTML, title: "HTML" },
+										{ icon: JavaScript, title: "Javascript" },
+										{ icon: CSS, title: "CSS" },
+										{ icon: Bootstrap, title: "Bootstrap" },
+										{ icon: ReactImg, title: "ReactJS" },
+										{ icon: Node, title: "NodeJS" },
+										{ icon: Express, title: "ExpressJS" },
+										{ icon: PostgreSQL, title: "PostgreSQL" },
+									]}
+								/>
 							</div>
 							<div className="col">
-								<div
-									className="card my-1"
-									data-aos="fade-up"
-									data-aos-delay="80"
-								>
-									<a href="https://bowling-mvp.herokuapp.com/" target="_blank">
-										<img
-											src={bowlingImg}
-											className="card-img-top"
-											alt="Bowling MVP Screenshot"
-										/>
-									</a>
-									<div className="card-body">
-										<h5 className="card-title">
-											<FontAwesomeIcon icon={faBowlingBall} /> Bowling MVP
-										</h5>
-										<p className="card-text">
-											Web application that allows authenticated users to track
-											each game of bowling and share their scores with one
-											another, create leagues/teams, setting a schedule of which
-											teams are competing with one another on each league, and
-											searching for nearby bowling alleys.
-										</p>
-
-										<div className="btn-group" role="group">
-											<a
-												href="https://github.com/jordanlahipramelb/bowling-mvp"
-												target="_blank"
-											>
-												<button type="button" className="btn btn-outline-info">
-													GitHub
-												</button>
-											</a>
-											<a
-												href="https://bowling-mvp.herokuapp.com/"
-												target="_blank"
-											>
-												<button type="button" className="btn btn-outline-info">
-													Demo
-												</button>
-											</a>
-										</div>
-										<br />
-										<br />
-										<small className="text-muted">
-											Project is hosted on Heroku. Please allow a couple of
-											minutes for application to load.
-										</small>
-
-										<div className="card-footer">
-											<img src={HTML} alt="HTML" />
-											<img src={JavaScript} alt="JavaScript" />
-											<img src={CSS} alt="CSS" />
-											<img src={Bootstrap} alt="Bootstrap" />
-											<img src={Python} alt="Python" />
-											<img src={Flask} alt="Flask" />
-											<img src={PostgreSQL} alt="PostgreSQL" />
-											<img src={SQLA} alt="SQLAlchemy" />
-										</div>
-									</div>
-								</div>
+								<Card
+									linkDemo={"https://bowling-mvp.herokuapp.com/"}
+									linkGithub={
+										"https://github.com/jordanlahipramelb/bowling-mvp"
+									}
+									screenshotImg={bowlingImg}
+									iconTitleImg={faBowlingBall}
+									title={"Bowling MVP"}
+									description={
+										"Web application that allows authenticated users to track each game of bowling and share their scores with one another, create leagues/teams, setting a schedule of which teams are competing with one another on each league, and searching for nearby bowling alleys."
+									}
+									smallText={
+										"	Project is hosted on Heroku. Please allow a couple of minutes for application to load."
+									}
+									technologies={[
+										{ icon: HTML, title: "HTML" },
+										{ icon: JavaScript, title: "Javascript" },
+										{ icon: CSS, title: "CSS" },
+										{ icon: Bootstrap, title: "Bootstrap" },
+										{ icon: Python, title: "Python" },
+										{ icon: Flask, title: "Flask" },
+										{ icon: SQLA, title: "SQLAlchemy" },
+										{ icon: PostgreSQL, title: "PostgreSQL" },
+									]}
+								/>
 							</div>
 							<div className="col">
-								<div
-									className="card my-1"
-									data-aos="fade-up"
-									data-aos-delay="80"
-								>
-									<a
-										href="https://thiccboyzbowlingclub-shop.vercel.app/"
-										target="_blank"
-									>
-										<img
-											src={tbbcImg}
-											className="card-img-top"
-											alt="TBBC Screenshot"
-										/>
-									</a>
-									<div className="card-body">
-										<h5 className="card-title">
-											<FontAwesomeIcon icon={faShoppingBag} /> Thicc Boyz
-											eCommerce
-										</h5>
-										<p className="card-text">
-											ECommerce website that allows users to navigate through
-											its products and allows them to add/remove these products
-											from their cart. Furthermore, the user is able to complete
-											checkout with the integration of Stripe.
-										</p>
-
-										<div className="btn-group" role="group">
-											<a
-												href="https://github.com/jordanlahipramelb/thiccboyz-ecommerce"
-												target="_blank"
-											>
-												<button type="button" className="btn btn-outline-info">
-													GitHub
-												</button>
-											</a>
-											<a
-												href="https://thiccboyzbowlingclub-shop.vercel.app/"
-												target="_blank"
-											>
-												<button type="button" className="btn btn-outline-info">
-													Demo
-												</button>
-											</a>
-										</div>
-										<br />
-										<br />
-
-										<div className="card-footer">
-											<img src={HTML} alt="HTML" />
-											<img src={JavaScript} alt="JavaScript" />
-											<img src={ReactImg} alt="React" />
-											<img src={CSS} alt="CSS" />
-										</div>
-									</div>
-								</div>
+								<Card
+									linkDemo={"https://thiccboyzbowlingclub-shop.vercel.app/"}
+									linkGithub={
+										"https://github.com/jordanlahipramelb/thiccboyz-ecommerce"
+									}
+									iconTitleImg={faShoppingBag}
+									screenshotImg={tbbcImg}
+									title={"Thicc Boyz eCommerce"}
+									description={
+										"ECommerce website that allows users to navigate through its products and add/remove these products from their cart. Furthermore, the user is able to complete checkout with the integration of Stripe."
+									}
+									technologies={[
+										{ icon: HTML, title: "HTML" },
+										{ icon: JavaScript, title: "Javascript" },
+										{ icon: CSS, title: "CSS" },
+										{ icon: ReactImg, title: "ReactJS" },
+										{ icon: Nextjs, title: "NextJS" },
+										{ icon: Sanity, title: "Sanity" },
+										{ icon: Stripe, title: "Stripe Payment Gateway" },
+									]}
+								/>
 							</div>
 						</div>
 					</div>
