@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.2491d4e9.css",
-    "main.js": "/static/js/main.68711435.js",
+    "main.css": "/static/css/main.6305cdcc.css",
+    "main.js": "/static/js/main.89727095.js",
     "static/media/thefitnessjourney.png": "/static/media/thefitnessjourney.c2e9d6a1461c99b5448c.png",
     "static/media/bowlingmvp.png": "/static/media/bowlingmvp.ecfd070213e74a1b6b49.png",
     "static/media/tbbc.png": "/static/media/tbbc.e7eae99fd4d1e0d4be1d.png",
@@ -23,11 +23,11 @@
     "index.html": "/index.html",
     "static/media/redux.svg": "/static/media/redux.0e4fb1c819ac4c060c92343147d4ccf7.svg",
     "static/media/bootstrap.svg": "/static/media/bootstrap.d180fe4cd44732fd70b35f650a76b99c.svg",
-    "main.2491d4e9.css.map": "/static/css/main.2491d4e9.css.map",
-    "main.68711435.js.map": "/static/js/main.68711435.js.map"
+    "main.6305cdcc.css.map": "/static/css/main.6305cdcc.css.map",
+    "main.89727095.js.map": "/static/js/main.89727095.js.map"
   },
   "entrypoints": [
-    "static/css/main.2491d4e9.css",
-    "static/js/main.68711435.js"
+    "static/css/main.6305cdcc.css",
+    "static/js/main.89727095.js"
   ]
 }
