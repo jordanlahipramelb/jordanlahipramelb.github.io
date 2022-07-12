@@ -2,6 +2,10 @@
 	margin-top: 5rem;
 	margin-bottom: 18rem;
 
+	@media screen and (max-width: 800px) {
+		margin-bottom: 45rem;
+	}
+
 	.container {
 		height: 100%;
 		display: flex;

@@ -90,7 +90,7 @@ const Navbar = () => {
 					onClick={handleClick}
 					spy={true}
 					smooth={true}
-					offset={-350}
+					offset={-700}
 					duration={300}
 				>
 					PROJECTS

@@ -7,11 +7,13 @@ import Contact from "./components/Contact/Contact";
 import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer/Footer";
+import SocialLinks from "./components/SocialLinks/SocialLinks";
 
 function App() {
 	return (
 		<>
 			<Navbar />
+			<SocialLinks />
 			<Header />
 			<About />
 			<Skills />
