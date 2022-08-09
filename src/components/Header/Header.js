@@ -2,7 +2,8 @@ import React from "react";
 import AOS from "aos";
 import "./Header.scss";
 import { useEffect } from "react";
-// import Loader from "react-loaders";
+import { Link } from "react-scroll";
+import Resume from "../../assets/Resume.pdf";
 
 const Header = () => {
 	useEffect(() => {
@@ -69,8 +70,24 @@ const Header = () => {
 							technologies.
 						</p>
 
-						<a href="/contact" className="flat-button">
+						<Link
+							to="contact"
+							className="flat-button"
+							spy={true}
+							smooth={true}
+							offset={50}
+							duration={300}
+						>
 							CONTACT
+						</Link>
+
+						<a
+							href={Resume}
+							className="resume"
+							download
+							title="Download Resume"
+						>
+							RESUME
 						</a>
 					</div>
 				</div>

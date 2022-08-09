@@ -36,7 +36,8 @@
 			letter-spacing: 1px;
 		}
 
-		.flat-button {
+		.flat-button,
+		.resume {
 			color: #00a9c7;
 			font-size: 13px;
 			font-weight: 400;
@@ -50,11 +51,16 @@
 			float: left;
 			white-space: nowrap;
 			transition: 0.3s;
+			cursor: pointer;
 
 			&:hover {
 				background: #00a9c7;
 				color: #fff;
 			}
+		}
+
+		.resume {
+			margin-left: 10px;
 		}
 
 		@media screen and (min-width: 200px) {

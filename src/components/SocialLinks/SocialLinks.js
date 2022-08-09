@@ -37,7 +37,12 @@ const SocialLinks = () => {
 					>
 						<FontAwesomeIcon icon={faSkype} color="#fff" />
 					</a>
-					<a target="_blank" rel="noreferrer" href="/contact">
+
+					<a
+						target="_blank"
+						rel="noreferrer"
+						href="mailto:jlahipramelb@gmail.com"
+					>
 						<FontAwesomeIcon icon={faEnvelope} color="#fff" />
 					</a>
 
