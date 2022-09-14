@@ -124,7 +124,7 @@ const Projects = () => {
 									screenshotImg={tbbcImg}
 									title={"Thicc Boyz eCommerce"}
 									description={
-										"ECommerce website that allows users to navigate through its products and add/remove these products from their cart. Furthermore, the user is able to complete checkout with the integration of Stripe."
+										"ECommerce website that allows users to navigate through its products and add/remove these products from their cart. Furthermore, the user is able to complete checkout with the integration of Stripe. These products were inspired by my bowling team."
 									}
 									technologies={[
 										{ icon: HTML, title: "HTML" },
